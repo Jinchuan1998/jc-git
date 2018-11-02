@@ -1,16 +1,38 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8" />
+    <title>Document</title>
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/mui.css"/>
 </head>
 <body>
-	
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+        <h1 class="mui-title">标题</h1>
+    </header>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init({
+      subpages: [
+      {
+      	url: 'list.html', // 地址
+      	id: 'list.html', // 标识
+      	styles: {
+      	  top: '45px',
+      	  bottom: '0px'
+      	}
+      },
+      {
+      	url: 'footer.html', // 地址
+      	id: 'footer.html', // 标识
+      	styles: {
+      	  top: '200px',
+      	  bottom: '0px'
+      	}
+      }
+      ]
+    })
+    </script>
 </body>
 </html>

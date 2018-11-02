@@ -1,0 +1,11 @@
+{
+	"index.html": {
+		"resources": [
+			"list.html"
+		],
+		"refer": [
+			"footer.html",
+			"list.html"
+		]
+	}
+}
